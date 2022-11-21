@@ -38,3 +38,10 @@
     height: 20px;
     margin-left: 16px;
 }
+
+.sun{
+    background-image: url(../../assets/icon-sun.svg);
+    width: 23px;
+    height: 23px;
+    
+}

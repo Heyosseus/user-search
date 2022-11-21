@@ -4,3 +4,10 @@
   justify-content: center;
   flex-direction: column;
 }
+#light{
+  background: #f2f2f2;
+}
+
+#dark{
+  background: #141D2F;
+}
