@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    width: 730px;
+    height: 38px;
+    justify-content: space-between;
+    
+}
+
+.paragraph{
+    font-family: var(--space-mono);
+    font-size: 26px;
+    line-height: 39px;
+    color: #222731;
+}
+
+.dark__moon{
+    display: flex;
+    margin-top: 8px;
+}
+
+.dark__moon:hover{
+    cursor: pointer;
+}
+
+.dark{
+    font-family: var(--space-mono);
+    font-size: 13px;
+    color: #697C9A;
+}
+
+.dark:hover{
+    cursor: pointer;
+}
+
+.img{
+    background-image: url(../../assets/icon-moon.svg);
+    width: 20px;
+    height: 20px;
+    margin-left: 16px;
+}
