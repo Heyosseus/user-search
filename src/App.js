@@ -9,7 +9,9 @@ import { useState } from 'react';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 function App() {
-   const [lightMode, setLightMode] = useState(true);
+  const [lightMode, setLightMode] = useState(true);
+  const [user, setUser] = useState("");
+  const [configs, setConfigs] = useState({})
 
   // const toggleTheme = ()=>{
   //   theme === 'light' ? setTheme('dark') : setTheme('light')
@@ -23,8 +25,10 @@ function App() {
           <SearchBar
             lightMode={lightMode}
             setLightMode={setLightMode}
+            user={user}
+            setUser={setUser}
           />
-          <Card lightMode={lightMode} setLightMode={setLightMode} />
+          <Card lightMode={lightMode} setLightMode={setLightMode} user={user} setUser={ setUser } />
         </div>
       </Main>
     </body>
@@ -43,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
 const Main = styled.body`
   background: ${(props) => (props.lightMode ? '#F6F8FF' : '#141d2f')};
   color: ${(props) => (props.lightMode ? '#4B6A9B' : 'white')};
-  @media (min-width: 700px) {
+  @media (max-width: 700px) {
     width: 700px;
     padding: 20px 63px;
   }

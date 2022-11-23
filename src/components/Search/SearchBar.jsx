@@ -1,23 +1,35 @@
 import React from 'react'
 import search from './SearchBar.module.css'
 import styled from 'styled-components';
+import axios from 'axios';
+import { useEffect } from 'react';
 const SearchBar = (props) => {
+
+   useEffect(() => {
+     fetchData();
+   }, []);
+
+   const fetchData = () => {
+     axios.get(`https://api.github.com/users/${props.user}`).then((res) => {
+       const users = res.data;
+       console.log({ users });
+     }).catch(err=>console.error(`Error: ${err}`));
+   };
   return (
     <div className={search.container}>
       <div>
-        <Form
-          action=""
-          className={search.form}
-          lightMode={props.lightMode}
-        >
+        <Form action="" className={search.form} lightMode={props.lightMode}>
           <div className={search.img}></div>
           <Input
             type="text"
             className={search.input}
             placeholder="Search GitHub username…"
             lightMode={props.lightMode}
+            onChange={e=>props.setUser(e.target.value)}
           />
-          <button className={search.button}>Search</button>
+          <button onClick={fetchData} className={search.button}>
+            Search
+          </button>
         </Form>
       </div>
     </div>
