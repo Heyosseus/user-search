@@ -8,7 +8,7 @@
 }
 
 .img{
-    background-image: url(../../assets/102967865.jpg);
+    /* background-image: url(../../assets/102967865.jpg); */
     width: 117px;
     height: 117px;
     background-size: contain;
@@ -122,6 +122,7 @@
     font-size: 15px;
     color: #4B6A9B;
     margin-left: 12px;
+    width: 120px;
 }
 
 .secondRow{
@@ -136,14 +137,15 @@
 }
 
 .lowerLine{
-    width: 365px;
-    justify-content: space-between;
-   display: flex;
+    width: 420px;
+    display: flex;
+    
 }
 
 .thirdRow{
     display: flex;
     margin-top: 28px;
+    
 }
 
 .website{
@@ -156,6 +158,8 @@
 .fourthRow{
     display: flex;
     margin-top: 27px;
+    
+    
 }
 
 .company{
@@ -163,4 +167,5 @@
     height: 20px;
     color: #4B6A9B;
     background-image: url(../../assets/icon-company.svg);
+    margin-left: 122px;
 }
