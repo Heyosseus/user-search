@@ -7,18 +7,19 @@ import axios from "axios";
 const Card = (props) => {
 
   return (
+    <div className={card.container2}>
     <Container lightMode={props.lightMode} className={card.container}>
       <img src={props.configs.avatar_url} className={card.img} alt='avatar'/>
       <div>
         <div className={card.heading}>
-          <WhiteContent lightMode={props.lightMode} className={card.name}>
+          <WhiteContent lightMode={props.lightMode} className={card.name} className={card.name}>
             {props.configs.name}
+            <p className={card.username}>@{props.configs.login}</p>
           </WhiteContent>
           <WhiteContent lightMode={props.lightMode} className={card.join}>
             Joined - {props.configs.created_at}
           </WhiteContent>
         </div>
-        <p className={card.username}>@{props.configs.login}</p>
         <p className={card.paragraph}>
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros.
@@ -38,13 +39,13 @@ const Card = (props) => {
             </WhiteContent>
             <WhiteContent
               lightMode={props.lightMode}
-              style={{ marginRight: "51px" }}
+              style={{ marginRight: "31px" }}
             >
               {props.configs.followers}
             </WhiteContent>
             <WhiteContent
               lightMode={props.lightMode}
-              style={{ marginRight: "11px" }}
+              
             >
               {props.configs.following}
             </WhiteContent>
@@ -85,13 +86,14 @@ const Card = (props) => {
         </CardInfo>
       </div>
     </Container>
+    </div>
   );
 };
 
 export default Card;
 
 const Container = styled.div`
-  background: ${(props) => (props.lightMode ? "#F6F8FF" : "#1e2a47")};
+  background: ${(props) => (props.lightMode ? '#F6F8FF' : '#1e2a47')};
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
 `;
 

@@ -3,7 +3,6 @@
     width: 730px;
     height: 38px;
     justify-content: space-between;
-    margin-top: 60px;
 }
 
 .paragraph{
@@ -43,5 +42,15 @@
     background-image: url(../../assets/icon-sun.svg);
     width: 23px;
     height: 23px;
+    
+}
+
+@media screen and (max-width: 376px) {
+    .container{
+        width: 622px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
 }

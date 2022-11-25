@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 const SearchBar = (props) => {
+  const [error, setError] =useState('')
   //  const [configs, setConfigs] = useState([]);
 
   //  useEffect(() => {
@@ -19,7 +20,7 @@ const SearchBar = (props) => {
        props.setConfigs(users);
        console.log(users.name);
        
-     }).catch(err=>console.error(`Error: ${err}`));
+     }).catch(setError("No results"));
    };
 
   
@@ -35,6 +36,7 @@ const SearchBar = (props) => {
             lightMode={props.lightMode}
             onChange={e=>props.setUser(e.target.value)}
           />
+          <div className={search.error}>{error}</div>
           <button onClick={fetchData} className={search.button}>
             Search
           </button>

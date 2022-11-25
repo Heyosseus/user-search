@@ -12,6 +12,7 @@ const Header = (props) => {
   
 
   return (
+    <div className={header.container}>
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <div className={header.header}>
@@ -33,6 +34,7 @@ const Header = (props) => {
          </div> */}
       </div>
     </ThemeProvider>
+    </div>
   );
 };
 

@@ -55,21 +55,24 @@ export default App;
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background: ${(props) => (props.lightMode ? "#F6F8FF" : "#141d2f")};
-  }
+    background: ${(props) =>
+      props.lightMode ? '#F6F8FF' : '#141d2f'};
+    display:flex;
+    }
 `;
 
 const Main = styled.body`
   background: ${(props) => (props.lightMode ? "#F6F8FF" : "#141d2f")};
   color: ${(props) => (props.lightMode ? "#4B6A9B" : "white")};
-  
   @media (max-width: 700px) {
     width: 700px;
     padding: 20px 63px;
   }
   @media (min-width: 1440px) {
-    width: 100%;
-    height: 100%;
-    padding: 20px 355px;
+    // width: 100%;
+    // height: 100%;
+    align-items: center;
+    display:flex;
+    justify-content: center;
   }
 `;

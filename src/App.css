@@ -11,3 +11,52 @@
 #dark{
   background: #141D2F;
 }
+
+@media screen and (max-width: 376px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+}
+@media screen and (max-width: 776px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+}
+@media screen and (max-width: 976px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+}
+@media screen and (max-width: 1076px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+}
+@media screen and (max-width: 1476px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+}
