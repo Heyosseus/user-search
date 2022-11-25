@@ -51,6 +51,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 200px;
+    }
+    
+}
+@media screen and (max-width: 676px) {
+    .container{
+        width: 522px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+    }
+    
+}
+@media screen and (max-width: 1076px) {
+    .container{
+        width: 622px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
     }
     
 }

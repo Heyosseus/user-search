@@ -69,8 +69,8 @@ const Main = styled.body`
     padding: 20px 63px;
   }
   @media (min-width: 1440px) {
-    // width: 100%;
-    // height: 100%;
+    width: 100%;
+    height: 100%;
     align-items: center;
     display:flex;
     justify-content: center;
