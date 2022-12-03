@@ -20,7 +20,7 @@ const SearchBar = (props) => {
        props.setConfigs(users);
        console.log(users.name);
        
-     }).catch(setError("No results"));
+     }).catch("No results");
    };
 
   
